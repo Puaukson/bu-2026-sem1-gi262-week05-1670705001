@@ -15,7 +15,7 @@ namespace Assignment
             for (int i = 0; i < n-1; i++)
             {
                 int minIndex = i;
-                for (int j = i+1; j < n; j++
+                for (int j = i + 1; j < n; j++) 
                 {
                     if(numbers[j] < numbers[minIndex])
                     {
@@ -59,13 +59,13 @@ namespace Assignment
             for (int i = 0; i < n; i++)
             {
                 int key = numbers[i];
-                int j = i - 1 ; 
-                while( j >= 0 && numbers[j] > key)
+                int j = i - 1;
+                while (j >= 0 && numbers[j] > key)
                 {
-                    numbers[j+1] = numbers[j];
+                    numbers[j + 1] = numbers[j];
                     j--;
                 }
-                numbers[j] = key;
+                numbers[j + 1] = key;
             }
             foreach (var n_ in numbers)
             {
